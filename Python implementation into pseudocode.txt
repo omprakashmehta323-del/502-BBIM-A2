@@ -1,0 +1,31 @@
+Pseudocode for Library Book Management System
+
+
+FUNCTION Add_Book(book_id, title)
+    IF book_id exists in books THEN
+        PRINT "Book ID already exists."
+    ELSE
+        ADD title to books using book_id
+        PRINT "Book added."
+    END IF
+END FUNCTION
+
+FUNCTION Remove_Book(book_id)
+    IF book_id exists in books THEN
+        REMOVE book from books
+        PRINT "Book removed."
+    ELSE
+        PRINT "Book ID not found."
+    END IF
+END FUNCTION
+
+FUNCTION Display_Books()
+    IF books is empty THEN
+        PRINT "No books available."
+    ELSE
+        PRINT "Available books:"
+        FOR EACH book in books
+            PRINT book_id and title
+        END FOR
+    END IF
+END FUNCTION
